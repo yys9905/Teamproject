@@ -3,7 +3,7 @@
  * DVD요금을 계산하는 프로그램
  * 
  * @author (2018315036 양유석,2018315003 최세원, 2018315022 이지연) 
- * @version (20.06.10)
+ * @version (2020.06.10)
  */
 public class DVDPriceCalculate
 {
