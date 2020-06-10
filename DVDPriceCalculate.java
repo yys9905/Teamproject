@@ -13,9 +13,32 @@ public class DVDPriceCalculate
      * @param  price/ age/ old   가격/ 나이/ 구작
      * @return     18세 이하 price*0.1 / 65세 이상 price*0.2 / 구작 price*0.5 
      */
-    public int OffThePrice(int price, int age, int old)
+    public double OffThePrice(double price, int age, int old)
     {
+        boolean oldDVD = false;
+        if (old >= 6){
+            oldDVD = true;}
+        else{
+            oldDVD = false;}
+
+        if(oldDVD == true)
+        {
+            return price = price * 0.5;
+        }
+        else if( age <= 18)
+        {
+            return price = price * 0.9;
+        }
+        else if (age >= 65 )
+        {
+            return price = price * 0.8; 
+        }
+        else
+        {
+            return price;
+        }
+
         
-        return price;
+        
     }
 }
