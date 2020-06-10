@@ -15,7 +15,17 @@ public class DVDPriceCalculate
      */
     public double OffThePrice(double price, int age, int old)
     {
-        if( age <= 18)
+        boolean oldDVD = false;
+        if (old >= 6){
+            oldDVD = true;}
+        else{
+            oldDVD = false;}
+
+        if(oldDVD == true)
+        {
+            return price = price * 0.5;
+        }
+        else if( age <= 18)
         {
             return price = price * 0.9;
         }
@@ -27,6 +37,7 @@ public class DVDPriceCalculate
         {
             return price;
         }
+
         
         
     }
