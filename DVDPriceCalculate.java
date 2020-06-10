@@ -13,9 +13,21 @@ public class DVDPriceCalculate
      * @param  y   메소드의 예제 매개변수
      * @return     x 더하기 y 
      */
-    public int OffThePrice(int price, int age, int old)
+    public double OffThePrice(double price, int age, int old)
     {
+        if( age <= 18)
+        {
+            return price = price * 0.9;
+        }
+        else if (age >= 65 )
+        {
+            return price = price * 0.8; 
+        }
+        else
+        {
+            return price;
+        }
         
-        return price;
+        
     }
 }
